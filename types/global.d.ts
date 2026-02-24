@@ -1,5 +1,4 @@
 declare global {
-    declare module 'react-select-country-list';
     type SignInFormData = {
         email: string;
         password: string;
@@ -218,5 +217,4 @@ declare global {
     };
 }
 
-declare module "react-select-country-list";
 export {};
