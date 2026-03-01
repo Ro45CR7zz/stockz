@@ -1,7 +1,7 @@
 /*
 import mongoose from "mongoose";
 
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/stocks_app";
+const MONGODB_URI = process.env.MONGODB_URI!;
 
 declare global{
     var mongooseCache: {
@@ -33,6 +33,8 @@ export const connectToDatabase = async () => {
     }
 
     console.log(`connected to database ${process.env} - ${MONGODB_URI}`);
+
+    return cached.conn;
 }
 
 either above code or this, both work
